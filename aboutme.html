@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile with Mini Racing Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #e4dcd4 50%, #ffffff 50%);
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      background-color: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .left-card {
+      background-color: #f4ece6;
+      padding: 40px 30px;
+      text-align: center;
+      width: 280px;
+    }
+
+    .left-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 20px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .game-container {
+      margin-top: 20px;
+      width: 200px;
+      height: 300px;
+      background-color: #222;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid white;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 6px;
+    }
+
+    .car {
+      width: 40px;
+      height: 60px;
+      background-color: #644117;
+      position: absolute;
+      bottom: 10px;
+      left: 80px;
+      border-radius: 4px;
+    }
+
+    .enemy {
+      width: 40px;
+      height: 60px;
+      background-color: white;
+      position: absolute;
+      top: -60px;
+      left: 0;
+      border-radius: 4px;
+    }
+
+    .game-buttons {
+      margin-top: 10px;
+    }
+
+    .game-buttons button {
+      padding: 6px 15px;
+      margin: 5px;
+      font-size: 13px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      background-color: #333;
+    }
+
+    .game-buttons button:hover {
+      background-color: #000;
+    }
+
+    .social-icons a {
+      margin: 0 8px;
+      color: #644117;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .right-card {
+      padding: 40px;
+      max-width: 480px;
+    }
+
+    .right-card h1 {
+      margin: 0;
+      font-size: 38px;
+      font-weight: 600;
+      color: #1e1e1e;
+    }
+
+    .right-card p.subtitle {
+      margin: 10px 0 28px;
+      font-size: 15px;
+      color: #777;
+    }
+
+    .hero-buttons {
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hero-buttons a {
+      padding: 10px 20px;
+      background-color: #644117;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-buttons a:hover {
+      background-color: black;
+    }
+
+    .right-card p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .extra-images {
+      margin-top: 25px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .extra-images img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="left-card">
+    <img src="images/amy 1.jpg" alt="Profile Picture">
+    <div class="name">NUR ANIS AMYLYAA BINTI ISMAIL 𐙚</div>
+    <div class="game-container" id="game">
+      <div class="car" id="car"></div>
+    </div>
+    <div class="game-buttons">
+      <button onclick="startGame()">Start Game</button>
+      <button onclick="endGame()">End Game</button>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/@amylyaa3" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/amylyaa___" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="right-card">
+    <h1>Hello ˎˊ˗</h1>
+    <p class="subtitle">Here’s who I am & all about me ── .✦</p>
+    <div class="hero-buttons">
+      <a href="index.html">HOME</a>
+      <a href="aboutme.html">ABOUT ME</a>
+      <a href="education.html">EDUCATION</a>
+      <a href="anak bulus.html">ANAK BULUS</a>
+      <a href="friends.html">FRIENDS</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="contact.html">CONTACT ME</a>
+    </div>
+    <p>
+      Hi, my name is Nur Anis Amylyaa Binti Ismail. I’m 21 years old and I’m from Kota Bharu, Kelantan. I’m currently studying Information Management at UiTM Machang.
+      I enjoy learning new things, especially in creative areas like graphic design and video editing. I also love group work because I believe teamwork helps build confidence and encourages sharing ideas openly.
+      In my free time, I enjoy music, editing photos, and spending time with my cat. Being a student is not just about studying — it’s about discovering yourself, building confidence, and creating memories with friends.
+    </p>
+    <div class="extra-images">
+      <img src="images/amy 2.jpg" alt="Photo 1">
+      <img src="images/amy 3.jpg" alt="Photo 2">
+    </div>
+  </div>
+</div>
+
+<script>
+  const game = document.getElementById('game');
+  const car = document.getElementById('car');
+  let carX = 80;
+  const roadWidth = 200;
+  let enemyInterval = null;
+  let enemyList = [];
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft' && carX > 0) carX -= 10;
+    if (e.key === 'ArrowRight' && carX < roadWidth - 40) carX += 10;
+    car.style.left = carX + 'px';
+  });
+
+  function createEnemy() {
+    const enemy = document.createElement('div');
+    enemy.classList.add('enemy');
+    enemy.style.left = Math.floor(Math.random() * (roadWidth - 40)) + 'px';
+    game.appendChild(enemy);
+    enemyList.push(enemy);
+
+    let position = -60;
+    const interval = setInterval(() => {
+      position += 5;
+      enemy.style.top = position + 'px';
+
+      if (
+        position + 60 > 240 &&
+        parseInt(enemy.style.left) < carX + 40 &&
+        parseInt(enemy.style.left) + 40 > carX
+      ) {
+        alert('Game Over!');
+        clearInterval(interval);
+        endGame();
+      }
+
+      if (position > 300) {
+        clearInterval(interval);
+        enemy.remove();
+      }
+    }, 30);
+  }
+
+  function startGame() {
+    if (!enemyInterval) {
+      enemyInterval = setInterval(createEnemy, 1500);
+    }
+  }
+
+  function endGame() {
+    clearInterval(enemyInterval);
+    enemyInterval = null;
+    enemyList.forEach(enemy => enemy.remove());
+    enemyList = [];
+  }
+</script>
+</body>
+</html>
