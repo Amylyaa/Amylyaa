@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amylyaa's Website</title>
+
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+      background: url("images/amy 5.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.5); /* boleh ubah ketelusan */
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .tv-frame {
+      width: 160px;
+      height: 160px;
+      background: #3b3b3b;
+      border: 6px solid #a6977b;
+      border-radius: 50%;
+      padding: 8px;
+      position: relative;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+      flex-shrink: 0;
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .text-content {
+      max-width: 400px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #5a4533;
+    }
+
+    .quote {
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      color: #3b2d22;
+    }
+
+    .scroll-button {
+      background: #6d5844;
+      color: #fff;
+      padding: 12px 30px;
+      font-weight: 600;
+      font-size: 1em;
+      border: none;
+      margin: 10px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .scroll-button:hover {
+      background: #5a4533;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: .9em;
+      color: #555;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Section -->
+<div class="overlay" id="home-section">
+  <div class="intro">
+    <div class="tv-frame">
+      <img src="images/amy 4.jpg" alt="Amylyaa profile" class="profile-img">
+    </div>
+    <div class="text-content">
+      <h1>Hello, Amylyaa</h1>
+      <p class="quote">“In all the madness, my family is my safe place.”</p>
+      <a href="aboutme.html" class="scroll-button">About Me</a>
+    </div>
+  </div>
+  <footer>© 2025 Created with love by Amylyaa Ismail</footer>
+</div>
+
+</body>
+</html>
+
