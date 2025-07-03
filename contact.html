@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Stylish font for name -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f7f1ec;
+      font-family: 'Poppins', sans-serif;
+      color: #4a2e1d;
+    }
+
+    header {
+      background-color: #644117;
+      padding: 20px;
+      color: white;
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo img {
+      height: 55px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    .logo-name {
+      font-family: 'Sacramento', cursive;
+      font-size: 36px;
+      color: #ffeec9;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .main-nav a:hover {
+      color: #ffd28a;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #1e1e1e;
+      margin: 30px 0 15px;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(100, 65, 23, 0.3);
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .box1 {
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(100, 65, 23, 0.1);
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 500;
+      color: #644117;
+    }
+
+    input, select, textarea {
+      padding: 12px;
+      border: 1px solid #c8b3a1;
+      border-radius: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      background-color: #fffaf7;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #644117;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 12px rgba(100, 65, 23, 0.2);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3d2a13;
+    }
+
+    .box2 {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #eee2d7;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      color: #1e1e1e;
+      box-shadow: 0 6px 15px rgba(100, 65, 23, 0.1);
+    }
+
+    footer {
+      background-color: #644117;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      .logo-name {
+        font-size: 28px;
+      }
+
+      .logo {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <div class="logo">
+        <span class="logo-name">Amylyaa Ismail</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutme.html">ABOUT ME</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li><a href="anak bulus.html">ANAK BULUS</a></li>
+          <li><a href="friends.html">FRIENDS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>CONTACT ME 📞</h1>
+
+    <!-- Google Maps -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5421459346335!2d102.2454272!3d6.1919613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6ae002434774f%3A0x8cd4b4e90e836c6d!2sJalan%20Kuala%20Besar%2C%2015350%20Kota%20Bharu%2C%20Kelantan!5e0!3m2!1sen!2smy!4v1751378884409!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Form Contact -->
+    <div class="box1">
+      <div class="form-container">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone">
+
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject">
+            <option value="">-- Choose Subject --</option>
+            <option value="question">Question</option>
+            <option value="complaints">Complaints</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box2">
+      <h2>Interested in working together or have something to share? Reach out anytime 💌</h2>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;2025 Amylyaa Ismail</p>
+  </footer>
+</body>
+</html>
